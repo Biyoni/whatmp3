@@ -40,14 +40,15 @@ copy_tags = ('TITLE', 'ALBUM', 'ARTIST', 'TRACKNUMBER', 'GENRE', 'COMMENT', 'DAT
 
 # Default encoding options
 enc_opts = {
-    '320':  {'enc': 'lame',       'ext': '.mp3',  'opts': '-q 0 -b 320 --ignore-tag-errors --noreplaygain'},
-    'V0':   {'enc': 'lame',       'ext': '.mp3',  'opts': '-q 0 -V 0 --vbr-new --ignore-tag-errors --noreplaygain'},
-    'V2':   {'enc': 'lame',       'ext': '.mp3',  'opts': '-q 0 -V 2 --vbr-new --ignore-tag-errors --noreplaygain'},
-    'V8':   {'enc': 'lame',       'ext': '.mp3',  'opts': '-q 0 -V 8 --vbr-new --ignore-tag-errors --noreplaygain'},
-    'Q8':   {'enc': 'oggenc',     'ext': '.ogg',  'opts': '-q 8 --utf8'},
-    'AAC':  {'enc': 'neroAacEnc', 'ext': '.aac',  'opts': '-br 320000'},
-    'ALAC': {'enc': 'ffmpeg',     'ext': '.m4a',  'opts': ''},
-    'FLAC': {'enc': 'flac',       'ext': '.flac', 'opts': '--best'}
+    '320':    {'enc': 'lame',       'ext': '.mp3',  'opts': '-q 0 -b 320 --ignore-tag-errors --noreplaygain'},
+    'V0':     {'enc': 'lame',       'ext': '.mp3',  'opts': '-q 0 -V 0 --vbr-new --ignore-tag-errors --noreplaygain'},
+    'V2':     {'enc': 'lame',       'ext': '.mp3',  'opts': '-q 0 -V 2 --vbr-new --ignore-tag-errors --noreplaygain'},
+    'V8':     {'enc': 'lame',       'ext': '.mp3',  'opts': '-q 0 -V 8 --vbr-new --ignore-tag-errors --noreplaygain'},
+    'Q8':     {'enc': 'oggenc',     'ext': '.ogg',  'opts': '-q 8 --utf8'},
+    'AAC':    {'enc': 'neroAacEnc', 'ext': '.aac',  'opts': '-br 320000'},
+    'ALAC':   {'enc': 'ffmpeg',     'ext': '.m4a',  'opts': ''},
+    'FLAC':   {'enc': 'flac',       'ext': '.flac', 'opts': '--best'},
+    'FLAC16': {'enc': 'flac',       'ext': '.flac', 'opts': '--best --bps=16'}
 }
 
 encoders = {
